@@ -1,0 +1,134 @@
+#home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+#home .leftHome{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home .rightHome{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .rightHome img{
+    width: 60%;
+    /*filter: drop-shadow(1.5px 1.5px 20px rgb(116,221,225));*******************************/
+    filter: drop-shadow(1.5px 1.5px 20px rgb(91, 91, 91));
+}
+#home .leftHome .homeDetails{
+    font-size: 2vmax;
+}
+#home .leftHome .homeDetails .line1{
+    font-size: .6em;
+}
+#home .leftHome .homeDetails .line2{
+    font-size: 2.6em;
+    background: linear-gradient(to right, aqua, white);
+    background-clip: text;
+    color: transparent;
+}
+#home .leftHome .homeDetails .line3{
+    font-size: .9em;
+}
+.homeDetails button{
+    padding: 0.6rem 1.2rem;
+    font-size: .87rem;
+    border-radius: 2rem;
+    border-top-right-radius: 0;
+    color:rgb(91, 91, 91);
+    background-color:aqua; ;
+    font-weight: bold;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: all .3s ease;
+}
+button:hover{
+    background-color: transparent;
+    border-color:aqua;
+    color:aqua;
+    border-top-right-radius: 2rem;
+    
+}
+
+@media (max-width: 750px){
+
+  #home{
+      flex-direction: column-reverse;
+      height: auto;
+      padding: 20px 0;
+  }
+
+  #home .leftHome{
+      width: 100%;
+      height: 50vh;
+      padding: 20px;
+      text-align: center;
+  }
+
+  #home .rightHome{
+      width: 100%;
+      height: 50vh;
+      align-items: end;
+      margin-bottom: 20px;
+  }
+
+  #home .rightHome img{
+      width: 70%;
+      max-width: 260px;
+  }
+
+  #home .leftHome .homeDetails{
+      font-size: 4vw;
+  }
+
+  #home .leftHome .homeDetails .line1{
+      font-size: 1rem;
+  }
+
+  #home .leftHome .homeDetails .line2{
+      font-size: 2rem;
+  }
+
+  #home .leftHome .homeDetails .line3{
+      font-size: 1rem;
+      margin-top: 8px;
+  }
+
+  .homeDetails button{
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      margin-top: 15px;
+  }
+}
+/**853, 430, 390, 414, 375**/
+@media (width:912px) {
+    #home .leftHome{
+        
+        padding-left: 60px;
+        
+    }
+    
+}
+@media (width:820px) {
+    #home .leftHome{
+        
+        padding-left: 50px;
+        
+    }
+    
+}
+
+
+    

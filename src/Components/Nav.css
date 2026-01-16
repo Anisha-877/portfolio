@@ -1,0 +1,97 @@
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background-color: rgb(17, 20, 23);
+}
+.active{
+    color: aqua;
+    border-bottom: 1.5px solid white;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    list-style: none;
+}
+nav h1{
+    font-size: 30px;
+    background: linear-gradient(to right, aqua, white);
+    background-clip: text;/*gradient color text er pechone ache**/
+    color: transparent;/**text becomes transparent so gradient color can be seen**/
+}
+nav ul li{
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s linear; 
+     
+}
+nav ul li:hover{
+    color: aqua;
+    border-bottom: 1.5px solid white;
+}
+.hamBurger{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap: 6px;
+    flex-direction: column;
+    display: none;
+    cursor: pointer;
+}
+.ham{
+    width: 30px;
+    height: 2px;
+    background-color: aliceblue;
+    transition: all .5s ease;
+}
+.mobileMenu{
+    position: absolute;
+    top:80px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(17,20,23,0.482);
+    backdrop-filter: blur(10px);
+    right: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    transition: all .5s ease;
+    gap:50px !important;
+
+}
+@media (max-width:750px){
+    .desktopMenu{
+        display: none;
+    }
+    .hamBurger{
+        display: flex;
+    }
+
+}
+.openMenu{
+    transform: translateX(0);
+}
+.activeHam .ham:nth-child(1){
+    transform: rotate(45deg) ;
+    position: relative;
+    top:8px;
+
+}
+.activeHam .ham:nth-child(2){
+    opacity: 0;
+}
+.activeHam .ham:nth-child(3){
+    transform: rotate(-45deg) ;
+    position: relative;
+    top:-8px;
+}

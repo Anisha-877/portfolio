@@ -1,0 +1,140 @@
+#about{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    overflow: hidden;
+}
+#about .leftAbout{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 50px;
+}
+#about .leftAbout .circle-line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#about .leftAbout .circle-line .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: aqua;
+    box-shadow: 1.5px 1.5px 18px rgb(180, 255, 255);
+}
+#about .leftAbout .circle-line .line{
+    width: 2.5px;
+    height: 120px;
+    background-color: aliceblue;
+    
+}
+.personalInfo,
+.education,
+.skills {
+    color: white;
+    text-transform: uppercase;
+
+}
+.about-details ul{
+    list-style: none;
+}
+.about-details{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.about-details .common h1{
+    background: linear-gradient(to right, rgb(255, 93, 185), white);
+    background-clip: text;
+    color: transparent;
+    /*margin-bottom: 5px;*/
+}
+.about-details .common span{
+    color: aqua;
+}
+.about-details .common ul li{
+    margin-bottom: 2px;
+}
+.rightAbout{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    
+}
+@media (max-width:750px){
+    #about{
+        flex-direction: column;
+    }
+    .leftAbout{
+        width: 100%;
+        padding: 10%;
+    }
+    .rightAbout{
+        width: 100%;
+    }
+}
+@media (width:1024px) {
+    .leftAbout{
+        padding: 50px;
+    }
+    
+}
+@media (width:912px) {
+    .leftAbout{
+        margin-left: 60px;
+    }
+    
+}
+@media (width:820px) {
+    .leftAbout{
+        margin-left: 38px;
+    }
+    
+}
+@media (width:768px) {
+    .leftAbout{
+        margin-left: 30px;
+    }
+    
+}
+@media (width:540px) {
+    .leftAbout{
+        margin-left: 120px;
+    }
+    
+}
+
+
+@media (width:412px) {
+    .leftAbout{
+        margin-left: 90px;
+    }
+    
+}
+
+
+@media (width:360px) {
+    .leftAbout{
+        margin-left: 90px;
+    }
+    
+}
+@media (width:344px) {
+    .leftAbout{
+        margin-left: 90px;
+    }
+    
+}
+
+
+
