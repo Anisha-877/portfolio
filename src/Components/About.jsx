@@ -70,21 +70,7 @@ export default function About() {
       }
       
     })
-    gsap.from(".rightAbout .card",{
-      x:100,
-      duration:1,
-      opacity:0,
-      stagger:1,
-      scrollTrigger:{
-        trigger:".circle",
-        scroll:"body",
-        scrub:2,
-        
-        start:"top 60%",
-        end:"top 30%"
-      }
-      
-    })
+    
   })
   return (
     <div id="about">
@@ -145,10 +131,10 @@ export default function About() {
       </div>
       </div>
       
-      <div className="rightAbout">
-        <Card title="FRONTEND DEVELOPER" image={webdev}/>
-        <Card title="DSA" image={dsa}/>
-        <Card title="CODING LANGUAGES" image={codinglang}/>
+      <div className="rightAbout" data-aos="fade-up-left">
+        <Card title="FRONTEND DEVELOPER" image={webdev} />
+        <Card title="DSA" image={dsa} />
+        <Card title="CODING LANGUAGES" image={codinglang} />
         </div>
     </div>
   )
